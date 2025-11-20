@@ -1,3 +1,4 @@
+
 body {
     text-align: center;
     background-color: #ffffff;
@@ -16,30 +17,28 @@ img {
     border: 5px solid black;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-    width: 700px; /* Imagen más grande */
+    width: 700px; 
     height: auto;
     margin: 20px 0;
 }
 
-/* Lista horizontal */
+
 ul {
-    list-style-type: none; /* quitar puntos */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
-    display: flex;          /* hace la lista horizontal */
-    justify-content: center; /* centra el menú */
-    flex-wrap: wrap;        /* se ajusta si no cabe todo en una línea */
-    gap: 10px;              /* espacio entre botones */
+    display: flex;          
+    justify-content: center; 
+    flex-wrap: wrap;        
+    gap: 10px;             
 }
 
-/* Elementos del menú como botones */
 li {
     border: 2px solid #8B4513;
     border-radius: 5px;
     background-color: #FFD700;
 }
 
-/* Enlaces dentro de los botones */
 li a {
     display: block;
     padding: 8px 15px;
