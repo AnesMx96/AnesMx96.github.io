@@ -11,7 +11,7 @@ body {
     color: white;
 }
 
-
+/* MENÚ LATERAL */
 #sideMenu {
     position: fixed;
     left: 0;
@@ -43,7 +43,7 @@ body {
     color: red;
 }
 
-
+/* HEADER */
 #header {
     margin-left: 200px;
     text-align: center;
@@ -51,9 +51,7 @@ body {
 }
 
 #header h1 {
-    font-family: 'Anton', sans-serif;
     font-size: 60px;
-    color: white;
     background-color: rgba(0,0,0,0.5); 
     display: inline-block;
     padding: 10px 20px;
@@ -61,34 +59,16 @@ body {
     text-shadow: 2px 2px 4px black;
 }
 
-
+/* CONTENIDO */
 #mainContent {
     margin-left: 200px;
     padding: 30px;
     color: tomato;
 }
 
-#breakImage {
-    text-align: center;
-    margin-top: 30px;
-    overflow: hidden;
-}
-
-#breakImage img {
-    width: 75%;
-    max-width: 900px;
-    border: 4px solid white;
-    transform: translateY(0px);
-    transition: transform 0.5s ease;
-}
-
-body.scrolled #breakImage img {
-    transform: translateY(-40px);
-}
-
-
+/* TECH BOX */
 #techBox {
-    margin-top: 395px;
+    margin-top: 30px;
     background-color: black;
     color: white;
     padding: 15px;
@@ -98,6 +78,7 @@ body.scrolled #breakImage img {
     border: 2px solid white;
 }
 
+/* FOOTER */
 #footer {
     position: fixed;
     bottom: 0;
@@ -107,3 +88,45 @@ body.scrolled #breakImage img {
     text-align: center;
     padding: 8px;
 }
+
+/* 📱 RESPONSIVE MÓVIL */
+@media (max-width: 768px) {
+
+    #sideMenu {
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sideMenu ul {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #sideMenu li {
+        padding: 0;
+    }
+
+    #sideMenu a {
+        font-size: 16px;
+    }
+
+    #header,
+    #mainContent {
+        margin-left: 0;
+    }
+
+    #footer {
+        left: 0;
+        width: 100%;
+        bottom: 60px;
+    }
+}
+
+
